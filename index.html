@@ -237,7 +237,6 @@
         <div id="submitStatus" class="submit-status" aria-live="polite"></div>
         <div class="full actions">
           <button id="submitLead" class="btn-primary" type="submit">Free Review 신청하기</button>
-          <button id="restart" class="btn-link" type="button">처음부터 다시 진단</button>
         </div>
       </form>
       <p class="notice">제출 기능을 사용하려면 HTML 파일 상단의 GOOGLE_APPS_SCRIPT_WEB_APP_URL에 Google Apps Script 웹 앱 URL을 입력하세요.</p>
@@ -562,7 +561,6 @@ document.getElementById('nextBtn').addEventListener('click',()=>{
   if(state.index < state.questions.length-1){state.index++;renderQuestion();}
   else {document.getElementById('progressBar').style.width='100%'; renderResult();}
 });
-document.getElementById('restart').addEventListener('click',()=>show('start'));
 document.getElementById('leadForm').addEventListener('submit',submitLeadForm);
 </script>
 </body>
