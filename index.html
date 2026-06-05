@@ -153,7 +153,7 @@
 <body>
   <main class="wrap">
     <section class="hero">
-      <div class="eyebrow">Kyongbo Pharmaceutical · Virtual CMC Partner</div>
+      <div class="eyebrow">Kyongbo Pharmaceutical · CMC Partner</div>
       <h1>IND / ADC Development Readiness Assessment</h1>
     </section>
 
@@ -442,7 +442,7 @@ function renderResult(){
   };
   document.getElementById('resultTitle').textContent = titleMap[r.overallStatus.key];
   document.getElementById('resultCopy').textContent = `${assessment.overallReady} Overall Readiness: ${r.total}/100. ${copyMap[r.overallStatus.key]}`;
-  document.getElementById('resultCta').innerHTML = `귀사의 점수는 <strong>${r.total}점</strong>입니다. 경보제약의 Virtual CMC partner 프로그램을 통해 개선 가능합니다.<br>Free CMC Readiness Review를 신청해 보세요.`;
+  document.getElementById('resultCta').innerHTML = `귀사의 점수는 <strong>${r.total}점</strong>입니다. 경보제약의 CMC partner 프로그램을 통해 개선 가능합니다.<br>Free CMC Readiness Review를 신청해 보세요.`;
 
   const rows = document.getElementById('categoryRows');
   rows.innerHTML = '';
